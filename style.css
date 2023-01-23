@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+  font-family: Montserrat, sans-serif;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+/*navbar*/
+.logo {
+    height: 90px;
+    padding: 20px 20px 30px 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 75px 0px 40px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header ul li {
+    font-size: 16px;
+    list-style: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-left: 6rem;
+}
+  
+  
+header ul li a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+}
+  
+.head-container {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/*navbar*/
+
+.food_app{
+    background-image: url(./img/food_app.png);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title_food_app h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+    padding-top: 50px;
+}
+
+.title_food_app{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.title_pizza {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+
+/*card*/
+
+.b_card {
+    border: 2px solid #FA4A0C;
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.div_button {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+button {
+    border: 0;
+    line-height: 2.4;
+    width: 80px;
+    padding: 0 18px;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: center;
+    color: #fff;
+    border-radius: 14px;
+    background-color:#FA4A0C;
+    box-shadow: 1px 1px 5px #B73227
+}
+
+.container_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center ;
+    padding-top: 25px;
+    line-height: 2;
+    font-weight: 700;
+}
+
+main h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+    padding-top: 35px;
+}
+
+.d_pizza{
+    font-size: 20px;
+}
+
+.problem {
+    padding: 80px 75px 110px 40px;
+    line-height: 35px;
+}
+.problem p {
+    font-size: 15px;
+    font-weight: 400px;
+}
+
+.problem strong {
+    font-size: 18px;
+    line-height: 65px;
+}
+
+.bon_app {
+    background-image: url(./img/bon_app.png);
+    min-height: 65vh;
+    background-repeat: no-repeat;
+
+}
+
+.title_bon_app strong {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 155px;
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+}
+
+
+/*footer*/
+.logo {
+    height: 80px;
+    padding: 50px 50px 10px 15px;
+}
+
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.footer-link .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	border-radius: 50%;
+	color: #FA4A0C;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
