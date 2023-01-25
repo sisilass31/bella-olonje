@@ -58,6 +58,14 @@ header ul li a {
     justify-content: center;
 }
 /*navbar*/
+/*food_app*/
+.title_food_app {
+    padding-top: 50px;
+}
+
+.title_food_app {
+    padding-top: 50px;
+}
 
 .food_app{
     background-image: url(./img/food_app.png);
@@ -79,11 +87,10 @@ header ul li a {
 }
 
 .title_food_app{
-
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
-    font-size: 68px;
+    font-size: 58px;
     line-height: 80px;
     text-align: center;
     letter-spacing: 0.2px;
@@ -96,7 +103,16 @@ header ul li a {
     color: #000000;
 }
 
+.p_pizza {
+    padding-top: 20px;
+}
+/*food_app*/
 /*card*/
+.trait
+{
+width:764px;
+border:1px solid black;
+}
 
 .b_card {
     border: 2px solid #FA4A0C;
@@ -105,15 +121,15 @@ header ul li a {
 }
 
 .div_button {
+    padding: 20px 30px 20px 30px;
     display: flex;
     justify-content: flex-end;
-
 }
 
 button {
     border: 0;
     line-height: 2.4;
-    width: 80px;
+    width: 90px;
     padding: 0 18px;
     font-size: 13px;
     font-weight: 500;
@@ -180,26 +196,82 @@ main h2{
 
 /*footer*/
 .logo {
-    height: 80px;
-    padding: 50px 50px 10px 15px;
+    height: 90px;
+    padding: 20px 20px 30px 15px;
 }
 
-.row{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.footer-link .social-links a{
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	border-radius: 50%;
-	color: #FA4A0C;
-}
-
-.social-links {
+header nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    padding: 10px 75px 0px 40px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header ul li {
+    font-size: 16px;
+    list-style: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-left: 6rem;
+}
+  
+  
+header ul li a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+}
+  
+.head-container {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+/*footer*/
+
+.footer {
+    padding: 0 115px 54px 115px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer_logo {
+    padding-top: 17px;
+    height: 90px;
+}
+
+.social {
+    padding-top: 66px;
+}
+
+.copy {
+    padding-top: 74px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+}
+
+
+hr {
+    height: 3px;
+    background-color:#d8d8d8;
+    border: none;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 55px;
 }

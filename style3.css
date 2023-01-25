@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html,body {
+  font-family: Montserrat, sans-serif;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+/*navbar*/
+.logo {
+    height: 90px;
+    padding: 20px 20px 30px 15px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 75px 0px 40px;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+header ul li {
+    font-size: 16px;
+    list-style: none;
+    font-family: Montserrat;
+    font-weight: 500;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    margin-left: 6rem;
+}
+  
+  
+header ul li a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+}
+  
+.head-container {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+/*navbar*/
+/*food_app*/
+.title_food_app {
+    padding-top: 50px;
+}
+
+.food_app{
+    background-image: url(./img/food_app.png);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title_food_app h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+    padding-top: 50px;
+}
+
+.title_food_app{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.title_pizza {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+/*food_app*/
+
+/*map*/
+map {
+	display: flex;
+}	
+.map {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 50px;
+}
+/*map*/
