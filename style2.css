@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 html,body {
@@ -49,7 +50,9 @@ header ul li a {
     color: rgb(17, 17, 17);
     text-decoration: none;
 }
-  
+header ul li a:hover {
+    color: #FA4A0C;
+}
 .head-container {
     max-width: 90%;
     margin: auto;
@@ -58,6 +61,8 @@ header ul li a {
     justify-content: center;
 }
 /*navbar*/
+
+
 /*food_app*/
 .title_food_app {
     padding-top: 50px;
@@ -104,51 +109,240 @@ header ul li a {
 
 /*infos*/
 
+
+.ingredient_quantite{
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    gap: 20%;
+    margin-bottom: 10px;
+}
+
+
+main {
+    color: #333333;
+}
+
 .label1 input {
-    width: 350px;
+    width: 280px;
     height: 35px;
     margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
 }
 
-.commande h1 {
-    padding: 35px;
-}
 
 .infos h1 {
-    padding: 55px;
+    padding: 85px;
 }
 
 hr {
     height: 3px;
     background-color:#d8d8d8;
     border: none;
-    margin-left: 300px;
-    margin-right: 300px;
-    margin-top: 55px;
+    margin: 25px 250px 25px;
 }
 
 .nom_prenom {
     display: flex;
     justify-content: space-around;
+    padding-right: 400px;
+    padding-bottom: 28px;
 }
 .telephone_email {
     display: flex;
     justify-content: space-around;
-    padding-top: 28px;
+    padding-right: 400px;
+    padding-bottom: 28px;
 }
+
 /*infos*/
 
-/*square*/
+/*livraison*/
 
-.square {
+.livraison h1 {
+    margin-left: 65px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+/*livraison*/
+
+/*commande*/
+.suppléments {
+    width: 280px;
+    height: 48px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+    background-color: #FFFFFF;
+}
+
+
+.commande {
+    margin-left: 65px;
+}
+
+.commande h1 {
+    padding-top: 30px;
+}
+
+.commande h3 {
+    padding-top: 50px;
+    padding-bottom: 42px;
+}
+
+.box input {
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.boissons_dessert {
+    display: flex;
+    flex-direction: row;
+}
+
+/*commande*/
+
+
+.div_button {
+    padding: 50px 150px 70px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    border: 0;
+    line-height: 2.5;
+    width: 120px;
+    padding: 0 18px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;
+}
+
+
+/*dessert et boissons*/
+
+.avec, .sans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}
+
+.sans_f {
+    padding-top: 39px;
+    padding-left: 50px;
+}
+.avec_f {
+    padding-left: 10px;
+}
+
+.boissons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 31rem;
+    padding-top: 5px;
+}
+
+.carre {
+    width: 24px;
+    height: 24px;
+    background-color: green;
+}
+
+.carre.grey {
     background-color: #C4C4C4;
-    height: 18px;
-    width: 18px;
 }
 
-.green_square {
-    background-color: #2BAF1F;
-    height: 20px;
-    width: 20px;
+.all {
+    display: flex;
 }
-/*square*/
+
+.content_of_dessert {
+    margin-left: 186px;
+}
+
+.Fromage {
+    padding: 7px;
+    border-radius: 5px;
+    width: 280px;
+    height: 48px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+    background-color: #FFFFFF;
+}
+/*dessert et boissons*/
+
+
+/*checkbox*/
+.check2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.container {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+
+  }
+
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: rgba(176, 176, 176, 0.677);
+    border-radius: 50%;
+}
+
+
+  .container input:checked ~ .checkmark {
+    background-color: #3751FF;
+  }
+
+  .checkmark:after {
+    position: absolute;
+    display: none;
+  }
+
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+
+  .container .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      background: white;
+  }
+/*checkbox*/

@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 html,body {
@@ -49,7 +50,9 @@ header ul li a {
     color: rgb(17, 17, 17);
     text-decoration: none;
 }
-  
+header ul li a:hover {
+    color: #FA4A0C;
+}
 .head-container {
     max-width: 90%;
     margin: auto;
@@ -101,13 +104,150 @@ header ul li a {
 }
 /*food_app*/
 
-/*map*/
-map {
-	display: flex;
-}	
-.map {
-	display: flex;
-	justify-content: center;
-	padding-bottom: 50px;
+/*contact*/
+
+.label1 {
+    padding-right: 200px;
+    padding-left: 100px;
+}
+
+.label1 input {
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+/*upload*/
+.chose {
+    display: flex;
+}
+.grp_choose {
+    padding-left: 100px;
+}
+
+.label_choose input {
+    width: 938px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+.label_message {
+    padding-top: 25px;
+}
+textarea {
+    width: 938px;
+    height: 141px;
+    margin-bottom: 20px;
+    color: grey;
+    border-color: gray;
+    margin-top: 12px;
+    padding: 10px 10px 80px;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+}
+/*upload*/
+
+.infos h1 {
+    padding: 52px 0px 65px 75px;
+}
+/*contact*/
+.nom_prenom {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 200px;
+    padding-bottom: 28px;
+}
+.telephone_email {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 200px;
+    padding-bottom: 28px;
+}
+.société_fonction {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 200px;
+    padding-bottom: 28px;
+}
+
+.div_button {
+    padding: 50px 0px 35px 100px;
+    display: flex;
+}
+
+.div_button2 {
+    padding: 50px 490px 50px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.button2 {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.g-recaptcha {
+    padding: 0px 0px 55px 100px;
+}
+
+.div_button p{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.div_button button {
+    border: 0;
+    line-height: 2.8;
+    width: 150px;
+    padding: 0 18px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;   
+}
+.div_button2 button {
+    border: 0;
+    line-height: 2.5;
+    width: 150px;
+    padding: 0 18px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;   
+}
+
+
+/*contact*/
+
+.choose {
+    padding-left: 50px;
+    padding-bottom:38px;
+    display: flex; 
+}
+.message {
+    padding-left: 50px;
+    padding-bottom: 55px;
+    display: flex;
 }
 /*map*/
+.map {
+    padding: 50px 0px 50px 100px;
+}
+/*map*/
+

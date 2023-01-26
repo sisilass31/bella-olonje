@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 html,body {
@@ -15,6 +16,10 @@ html,body {
 }
 
 /*navbar*/
+
+.nav-link-home {
+    color: #FA4A0C;
+}
 .logo {
     height: 90px;
     padding: 20px 20px 30px 15px;
@@ -49,7 +54,11 @@ header ul li a {
     color: rgb(17, 17, 17);
     text-decoration: none;
 }
-  
+
+header ul li a:hover {
+    color: #FA4A0C;
+}
+
 .head-container {
     max-width: 90%;
     margin: auto;
@@ -128,16 +137,16 @@ border:1px solid black;
 
 button {
     border: 0;
-    line-height: 2.4;
-    width: 90px;
+    line-height: 2.2;
+    width: 100px;
     padding: 0 18px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     text-align: center;
     color: #fff;
     border-radius: 14px;
-    background-color:#FA4A0C;
-    box-shadow: 1px 1px 5px #B73227
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;
 }
 
 .container_card{
@@ -253,14 +262,18 @@ header ul li a {
 }
 
 .social {
-    padding-top: 66px;
+    padding-top: 44px;
+}
+
+.img_social{
+    padding: 15px;
 }
 
 .copy {
     padding-top: 74px;
     font-family: Montserrat;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.2px;
@@ -275,3 +288,10 @@ hr {
     margin-right: 300px;
     margin-top: 55px;
 }
+
+
+/*responsive*/
+@media screen and {
+
+}
+/*responsive*/

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+html,body {
+  font-family: Montserrat, sans-serif;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+.boissons_dessert {
+    display: flex;
+    flex-direction: row;
+}
+
+.dessert {
+    padding-left: 200px;
+}
+
+.box1 input {
+    width: 320px;
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.box1 label{
+    margin-right: 10px;
+}
+
