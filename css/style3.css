@@ -17,50 +17,111 @@ html,body {
 }
 
 /*navbar*/
-.logo {
-    height: 115px;
-    padding: 20px 20px 30px 15px;
-    width: 170px;
-}
-
-header nav {
+.nav-bar {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 75px 0px 40px;
-}
-
-header ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-  
-header ul li {
-    font-size: 16px;
     list-style: none;
-    font-family: Montserrat;
-    font-weight: 500;
-    line-height: 28px;
-    text-align: center;
-    letter-spacing: 0.2px;
-    margin-left: 6rem;
+    position: relative;
+    background-color: #FFF;
+    padding: 12px 20px;
 }
-  
-  
-header ul li a {
-    color: rgb(17, 17, 17);
+.logo img {
+    width: 150px;
+}
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+    padding-right: 55px;
+}
+.menu li a {
+    display: inline-block;
     text-decoration: none;
+    color: #333;
+    text-align: center;
+    position: relative;
 }
-header ul li a:hover {
+
+.menu li a:hover {
     color: #FA4A0C;
 }
-.head-container {
-    max-width: 90%;
-    margin: auto;
-    display: flex;
-    text-align: center;
-    justify-content: center;
+.open-menu {
+    position: absolute;
+    color: #FA4A0C;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.close-menu {
+    position: absolute;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    padding: 10px;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+
+@media(max-width: 920px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(152, 152, 152);;
+        transition: all 0.2s ease-in-out;
+        padding-top: 100px;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px;
+        color: #FFF;
+    }
+    .open-menu{
+        display: block;
+        padding-right: 25px;
+        padding-top: 13px;
+    }
+    .close-menu {
+        display: block;
+        color: #FFF;
+        padding-right: 25px;
+        padding-top: 22px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .menu li a:hover {
+        color: #333;
+    }
+
+    .nav-link {
+        font-family: Montserrat;
+        letter-spacing: .8px;
+    }
 }
 /*navbar*/
 /*food_app*/
