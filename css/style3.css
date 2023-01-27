@@ -69,7 +69,7 @@ header ul li a:hover {
 }
 
 .food_app{
-    background-image: url(./img/food_app.png);
+    background-image: url(../img/food_app.png);
     min-height: 90vh;
     background-repeat: no-repeat;
     background-position: center;

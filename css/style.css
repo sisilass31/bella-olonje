@@ -46,11 +46,11 @@ html,body {
 }
 
 .menu li a:hover {
-    color: #FF8118;
+    color: #FA4A0C;
 }
 .open-menu {
     position: absolute;
-    color: #FF8118;;
+    color: #FA4A0C;
     cursor: pointer;
     font-size: 1.5rem;
     display: none;
@@ -87,7 +87,7 @@ html,body {
         top: 0;
         right: -100%;
         z-index: 100;
-        background-color: #FF8118;;
+        background-color: rgb(152, 152, 152);;
         transition: all 0.2s ease-in-out;
         padding-top: 100px;
     }
@@ -101,16 +101,25 @@ html,body {
     }
     .open-menu{
         display: block;
+        padding-right: 25px;
+        padding-top: 13px;
     }
     .close-menu {
         display: block;
         color: #FFF;
+        padding-right: 25px;
+        padding-top: 22px;
     }
     #check:checked ~ .menu {
         right: 0;
     }
     .menu li a:hover {
         color: #333;
+    }
+
+    .nav-link {
+        font-family: Montserrat;
+        letter-spacing: .8px;
     }
 }
 /*navbar*/
@@ -124,7 +133,7 @@ html,body {
 }
 
 .food_app{
-    background-image: url(./img/food_app.png);
+    background-image: url(../img/food_app.png);
     min-height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
@@ -232,7 +241,7 @@ main h2{
 }
 
 .bon_app {
-    background-image: url(./img/bon_app.png);
+    background-image: url(../img/bon_app.png);
     min-height: 65vh;
     background-repeat: no-repeat;
 }
@@ -309,3 +318,5 @@ hr {
 
 }*/
 /*responsive tablette*/
+
+
