@@ -185,7 +185,6 @@ html,body {
 main {
     color: #333333;
 }
-
 .label1 input {
     width: 280px;
     height: 35px;
@@ -199,7 +198,9 @@ main {
 
 
 .infos h1 {
-    padding: 55px 0px 35px 100px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-left: 65px;
 }
 
 hr {
@@ -211,15 +212,13 @@ hr {
 
 .nom_prenom {
     display: flex;
-    justify-content: space-around;
-    padding-right: 400px;
-    padding-bottom: 28px;
+    justify-content: space-between;
+    padding: 0px 600px 28px 65px;
 }
 .telephone_email {
     display: flex;
-    justify-content: space-around;
-    padding-right: 400px;
-    padding-bottom: 28px;
+    justify-content: space-between;
+    padding: 0px 600px 28px 65px;
 }
 
 /*infos*/
