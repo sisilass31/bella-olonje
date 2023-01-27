@@ -10,23 +10,22 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
-            <nav class="container">
-              <img class="logo" src="./img/logo.png" alt="logo">
-              <div class="nav">
-                <ul class="nav-menu">
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><img src="./img/logo.png"/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
                   <li><a href="index.html" class="nav-link">Home</a></li>
                   <li><a href="#pizza" class="nav-link">Pizzas</a></li>
                   <li><a href="#burger" class="nav-link">Burgers</a></li>
                   <li><a href="#salades" class="nav-link">Salades</a></li>
                   <li><a href="index3.html" class="nav-link">Contact</a></li>
-                </ul>
-              </div>
-            </nav>
-        </div>
-    
-    
-    
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        
         <div class="food_app">
             <div class="title_food_app">
                 <h3>Food app</h3>

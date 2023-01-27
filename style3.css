@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 html,body {
@@ -17,8 +18,9 @@ html,body {
 
 /*navbar*/
 .logo {
-    height: 90px;
+    height: 115px;
     padding: 20px 20px 30px 15px;
+    width: 170px;
 }
 
 header nav {
@@ -251,3 +253,5 @@ textarea {
 }
 /*map*/
 
+/*responsive*/
+/*responsive*/

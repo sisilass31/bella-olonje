@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 html,body {
@@ -17,8 +18,9 @@ html,body {
 
 /*navbar*/
 .logo {
-    height: 90px;
+    height: 115px;
     padding: 20px 20px 30px 15px;
+    width: 170px;
 }
 
 header nav {
@@ -136,7 +138,7 @@ main {
 
 
 .infos h1 {
-    padding: 85px;
+    padding: 55px 0px 35px 78px;
 }
 
 hr {
@@ -258,7 +260,7 @@ button {
 .boissons{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 31rem;
     padding-top: 5px;
 }
@@ -306,16 +308,15 @@ button {
     position: relative;
     cursor: pointer;
     font-size: 16px;
+}
 
-  }
-
-  .container input {
+.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
+}
   
-  .checkmark {
+.checkmark {
     position: absolute;
     top: 0;
     left: 0;
@@ -326,23 +327,26 @@ button {
 }
 
 
-  .container input:checked ~ .checkmark {
+.container input:checked ~ .checkmark {
     background-color: #3751FF;
-  }
+}
 
-  .checkmark:after {
+.checkmark:after {
     position: absolute;
     display: none;
-  }
+}
 
-  .container input:checked ~ .checkmark:after {
+.container input:checked ~ .checkmark:after {
     display: block;
-  }
+}
 
-  .container .checkmark:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      background: white;
-  }
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    background: white;
+}
 /*checkbox*/
+
+/*responsive*/
+/*responsive*/
