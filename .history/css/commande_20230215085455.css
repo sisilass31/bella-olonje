@@ -1,0 +1,498 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: Montserrat, sans-serif;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    scroll-behavior: smooth;
+}
+
+/*navbar*/
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: #FFF;
+    padding: 12px 20px;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+    padding-right: 55px;
+}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.menu li a:hover {
+    color: #FA4A0C;
+}
+
+.open-menu {
+    position: absolute;
+    color: #FA4A0C;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.close-menu {
+    position: absolute;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    padding: 10px;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+#check {
+    display: none;
+}
+
+@media(max-width: 920px) {
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(152, 152, 152);
+        ;
+        transition: all 0.2s ease-in-out;
+        padding-top: 100px;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+
+    .menu li a {
+        padding: 10px;
+        color: #FFF;
+    }
+
+    .open-menu {
+        display: block;
+        padding-right: 25px;
+        padding-top: 13px;
+    }
+
+    .close-menu {
+        display: block;
+        color: #FFF;
+        padding-right: 25px;
+        padding-top: 22px;
+    }
+
+    #check:checked~.menu {
+        right: 0;
+    }
+
+    .menu li a:hover {
+        color: #333;
+    }
+
+    .nav-link {
+        font-family: Montserrat;
+        letter-spacing: .8px;
+    }
+}
+
+/*navbar*/
+
+
+/*food_app*/
+.title_food_app {
+    padding-top: 50px;
+}
+
+.food_app {
+    background-image: url(../img/food_app.png);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.title_food_app h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+    padding-top: 50px;
+}
+
+.title_food_app {
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.title_pizza {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+
+/*food_app*/
+
+
+/*infos*/
+
+
+.ingredient_quantite {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20%;
+    margin-bottom: 10px;
+}
+
+
+main {
+    color: #333333;
+}
+
+.label1 input {
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+
+.infos h1 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-left: 65px;
+}
+
+hr {
+    height: 3px;
+    background-color: #d8d8d8;
+    border: none;
+    margin: 25px 250px 25px;
+}
+
+.nom_prenom {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 600px 28px 65px;
+}
+
+.telephone_email {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 600px 28px 65px;
+}
+
+/*infos*/
+
+/*livraison*/
+
+.livraison h1 {
+    margin-left: 65px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+/*livraison*/
+
+/*commande*/
+.suppléments {
+    width: 280px;
+    height: 48px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+    background-color: #FFFFFF;
+}
+
+
+.commande {
+    margin-left: 65px;
+}
+
+.commande h1 {
+    padding-top: 30px;
+}
+
+.commande h3 {
+    padding-top: 50px;
+    padding-bottom: 42px;
+}
+
+.box input {
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+.boissons_dessert {
+    display: flex;
+    flex-direction: row;
+}
+
+/*commande*/
+
+
+.div_button {
+    padding: 50px 150px 70px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    border: 0;
+    line-height: 2.5;
+    width: 120px;
+    padding: 0 18px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;
+}
+
+
+/*dessert et boissons*/
+
+.avec,
+.sans {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    height: 40px;
+    align-items: center;
+}
+
+.sans_f {
+    padding-top: 39px;
+    padding-left: 50px;
+}
+
+.avec_f {
+    padding-left: 10px;
+}
+
+.boissons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 31rem;
+    padding-top: 5px;
+}
+
+.carre {
+    width: 24px;
+    height: 24px;
+    background-color: green;
+}
+
+.carre.grey {
+    background-color: #C4C4C4;
+}
+
+.all {
+    display: flex;
+}
+
+.content_of_dessert {
+    margin-left: 186px;
+}
+
+.Fromage {
+    padding: 7px;
+    border-radius: 5px;
+    width: 280px;
+    height: 48px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+    background-color: #FFFFFF;
+}
+
+/*dessert et boissons*/
+
+
+/*checkbox*/
+.check2 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.container {
+    position: relative;
+    cursor: pointer;
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: rgba(176, 176, 176, 0.677);
+    border-radius: 50%;
+}
+
+
+.container input:checked~.checkmark {
+    background-color: #3751FF;
+}
+
+.checkmark:after {
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    background: white;
+}
+
+/*checkbox*/
+
+/*responsive*/
+@media (max-width:767px) {
+    .grp_infos {
+        display: flex;
+    }
+
+    .nom_prenom {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin-left: 5%;
+    }
+
+    .telephone_email {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin-left: 5%;
+    }
+
+    .content_of_dessert {
+        margin-left: 0px;
+    }
+
+    .all {
+        flex-direction: column;
+    }
+}
+
+/* Ipad Mini to ipad */
+@media screen and (min-width:768px) and (max-width:991px) {}
+
+/* Ipad et Mini Ordi */
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .grp_infos {
+        display: flex;
+    }
+
+    .nom_prenom {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin-left: 5%;
+    }
+
+    .telephone_email {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+        margin-left: 5%;
+    }
+
+    .content_of_dessert {
+        margin-left: 0px;
+    }
+
+    .all {
+        flex-direction: column;
+    }
+}
+
+/*responsive*/

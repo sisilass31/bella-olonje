@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+html,body {
+  font-family: Montserrat, sans-serif;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  scroll-behavior: smooth;
+}
+
+/*navbar*/
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: #FFF;
+    padding: 12px 20px;
+}
+.logo img {
+    width: 150px;
+}
+.menu {
+    display: flex;
+}
+
+.menu li {
+    padding-left: 30px;
+    padding-right: 55px;
+}
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    position: relative;
+}
+
+.menu li a:hover {
+    color: #FA4A0C;
+}
+.open-menu {
+    position: absolute;
+    color: #FA4A0C;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.close-menu {
+    position: absolute;
+    color: #333;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+    padding: 10px;
+}
+
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+#check {
+    display: none;
+}
+
+@media(max-width: 920px){
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 100;
+        background-color: rgb(152, 152, 152);;
+        transition: all 0.2s ease-in-out;
+        padding-top: 100px;
+    }
+
+    .menu li {
+        margin-top: 40px;
+    }
+    .menu li a {
+        padding: 10px;
+        color: #FFF;
+    }
+    .open-menu{
+        display: block;
+        padding-right: 25px;
+        padding-top: 13px;
+    }
+    .close-menu {
+        display: block;
+        color: #FFF;
+        padding-right: 25px;
+        padding-top: 22px;
+    }
+    #check:checked ~ .menu {
+        right: 0;
+    }
+    .menu li a:hover {
+        color: #333;
+    }
+
+    .nav-link {
+        font-family: Montserrat;
+        letter-spacing: .8px;
+    }
+}
+/*navbar*/
+/*food_app*/
+.title_food_app {
+    padding-top: 50px;
+}
+
+.food_app{
+    background-image: url(../img/food_app.png);
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.title_food_app h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #F7F7F7;
+    padding-top: 50px;
+}
+
+.title_food_app{
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+}
+
+.title_pizza {
+    display: flex;
+    justify-content: center;
+    color: #000000;
+}
+/*food_app*/
+
+/*contact*/
+
+.label1 {
+    padding-right: 200px;
+    padding-left: 100px;
+}
+
+.label1 input {
+    width: 280px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 8px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+
+/*upload*/
+.chose {
+    display: flex;
+}
+.grp_choose {
+    padding-left: 100px;
+}
+
+.label_choose input {
+    width: 938px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px 12px;
+    color: grey;
+    border-radius: 5px;
+    border-color: gray;
+}
+.label_message {
+    padding-top: 25px;
+}
+textarea {
+    width: 938px;
+    height: 141px;
+    margin-bottom: 20px;
+    color: grey;
+    border-color: gray;
+    margin-top: 12px;
+    padding: 10px 10px 80px;
+    outline: none;
+    border-radius: 5px;
+    resize: none;
+}
+/*upload*/
+
+.infos h1 {
+    padding: 52px 0px 65px 75px;
+}
+/*contact*/
+.nom_prenom {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 200px;
+    padding-bottom: 28px;
+}
+.telephone_email {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 200px;
+    padding-bottom: 28px;
+}
+.société_fonction {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 200px;
+    padding-bottom: 28px;
+}
+
+.div_button {
+    padding: 50px 0px 35px 100px;
+    display: flex;
+}
+
+.div_button2 {
+    padding: 50px 490px 50px 0px;
+    display: flex;
+    justify-content: flex-end;
+}
+.button {
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.button2 {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.g-recaptcha {
+    padding: 0px 0px 55px 100px;
+}
+
+.div_button p{
+    padding-left: 50px;
+    padding-top: 10px;
+}
+
+.div_button button {
+    border: 0;
+    line-height: 2.8;
+    width: 150px;
+    padding: 0 18px;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;   
+}
+.div_button2 button {
+    border: 0;
+    line-height: 2.5;
+    width: 150px;
+    padding: 0 18px;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #FA4A0C;
+    box-shadow: 1px 1px 5px #B73227;   
+}
+
+
+/*contact*/
+
+.choose {
+    padding-left: 50px;
+    padding-bottom:38px;
+    display: flex; 
+}
+.message {
+    padding-left: 50px;
+    padding-bottom: 55px;
+    display: flex;
+}
+/*map*/
+.map {
+    padding: 50px 0px 50px 100px;
+}
+/*map*/
+
+/*responsive*/
+/* Mobile */
+@media (max-width:767px) {
+ 
+}
+/* Ipad Mini to ipad */
+@media screen and (min-width:768px) and (max-width:991px){
+    .infos h1 {
+        padding: 52px 0px 65px 75px;
+        }
+        .nom_prenom {
+        padding-right: 200px;
+        padding-bottom: 28px;
+        flex-direction: column;
+        }
+        .label1 {
+        padding-right: 200px;
+        padding-left: 100px;
+        }
+        .telephone_email {
+        padding-right: 200px;
+        padding-bottom: 28px;
+        flex-direction: column;
+        }
+        .société_fonction {
+        justify-content: center;
+        justify-content: safe;
+        justify-content: space-evenly;
+        justify-content: space-between;
+        padding-right: 200px;
+        padding-bottom: 28px;
+        justify-content: space-around;
+        flex-direction: column;
+        }
+}

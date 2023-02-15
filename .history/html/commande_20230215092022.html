@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+  <link rel="stylesheet" href="../css/commande.css">
+  <title>Votre commande</title>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul class='nav-bar'>
+        <li class='logo'><a href='#'><img src="../img/logo.png" alt="jsp"></a></li>
+        <input type='checkbox' id='check' />
+        <span class="menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="#pizza" class="nav-link">Pizzas</a></li>
+          <li><a href="#burger" class="nav-link">Burgers</a></li>
+          <li><a href="#salades" class="nav-link">Salades</a></li>
+          <li><a href="index3.html" class="nav-link">Contact</a></li>
+          <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+        </span>
+        <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+      </ul>
+    </nav>
+
+    <div class="food_app">
+      <div class="title_food_app">
+        <h3>Food app</h3>
+        <strong>Chez Bella <br>chaque désir s'additionne.</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="infos" id="form-infos">
+      <form>
+        <h1>Vos informations</h1>
+
+        <div class="grp_infos">
+          <div class="nom_prenom">
+            <div class="label1">
+              <label class="label_nom">Nom</label><br>
+              <input type="text" placeholder="Nom">
+            </div>
+            <div class="label1">
+              <label class="label_nom">Prénom</label><br>
+              <input type="text" placeholder="Prénom">
+            </div>
+          </div>
+
+          <div class="telephone_email">
+            <div class="label1">
+              <label class="label_nom">Téléphone</label><br>
+              <input type="text" placeholder="Téléphone">
+            </div>
+            <div class="label1">
+              <label class="label_nom">Email</label><br>
+              <input type="text" placeholder="Email">
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <hr>
+
+    <div class="commande">
+      <form>
+        <h1>Votre commande</h1>
+        <h3>Suppléments</h3>
+        <div class="grp_suppliment">
+          <div class="ingredient_quantite">
+            <div class="fromage">
+              <label>Ingredient</label><br>
+              <select name="ingr" class="suppléments">
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+              </select>
+            </div>
+            <div class="box">
+              <label>Quantites</label><br>
+              <input type="number" min="0" placeholder="1">
+            </div>
+          </div>
+
+          <div class="ingredient_quantite">
+            <div class="fromage">
+              <label>Ingredient 1</label><br>
+              <select name="ingr" class="suppléments">
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+              </select>
+            </div>
+            <div class="box">
+              <label>Quantites</label><br>
+              <input type="number" min="0" placeholder="1">
+            </div>
+          </div>
+
+          <div class="ingredient_quantite">
+            <div class="fromage">
+              <label>Ingredient 2</label><br>
+              <select name="ingr" class="suppléments">
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+              </select>
+            </div>
+            <div class="box">
+              <label>Quantites</label><br>
+              <input type="number" min="0" placeholder="1">
+            </div>
+          </div>
+
+          <div class="ingredient_quantite">
+            <div class="fromage">
+              <label>Ingredient 3</label><br>
+              <select name="ingr" class="suppléments">
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+                <option value="fromage">Fromage</option>
+              </select>
+            </div>
+            <div class="box">
+              <label>Quantites</label><br>
+              <input type="number" min="0" placeholder="1">
+            </div>
+          </div>
+        </div>
+
+
+        <div class="check2">
+          <label class="container">Avec frites
+            <input type="radio" checked="checked" name="radio">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Sans frites
+            <input type="radio" name="radio">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+
+        <div class="all">
+          <div class="content_of_boisson">
+            <h2>Boissons</h2>
+            <div class="boissons">
+              <div class="carre"></div>
+              <label>Coca-Cola</label>
+              <select name="Fromage" class="Fromage" style="margin-top: 10px;">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+            <div class="boissons">
+              <div class="carre grey"></div>
+              <label>Fanta</label>
+              <select name="Fromage" class="Fromage" style="margin-top: 10px;">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+            <div class="boissons">
+              <div class="carre grey"></div>
+              <label>L'eau</label>
+              <select name="Fromage" class="Fromage" style="margin-top: 10px;">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="content_of_dessert">
+            <h2>Dessert</h2>
+            <div class="boissons dessert">
+              <div class="carre"></div>
+              <label>Tiramisu</label>
+              <select name="Fromage" class="Fromage" style="margin-top: 10px;">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+            <div class="boissons dessert">
+              <div class="carre grey"></div>
+              <label>Cheese-cake</label>
+              <select name="Fromage" class="Fromage" style="margin-top: 10px;">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+            <div class="boissons dessert">
+              <div class="carre grey"></div>
+              <label>Tarte au fraise</label>
+              <select name="Fromage" class="Fromage" style="margin-top: 10px;">
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+    <hr>
+
+    <div class="livraison">
+      <form>
+        <h1>Adresse de livraison</h1>
+        <div class="grp_infos">
+          <div class="nom_prenom">
+            <div class="label1">
+              <label class="label_nom">Nom</label><br>
+              <input type="text" placeholder="Nom">
+            </div>
+            <div class="label1">
+              <label class="label_nom">Prénom</label><br>
+              <input type="text" placeholder="Prénom">
+            </div>
+          </div>
+
+          <div class="telephone_email">
+            <div class="label1">
+              <label class="label_nom">Téléphone</label><br>
+              <input type="text" placeholder="Téléphone">
+            </div>
+            <div class="label1">
+              <label class="label_nom">Email</label><br>
+              <input type="text" placeholder="Email">
+            </div>
+          </div>
+          <div class="nom_prenom">
+            <div class="label1">
+              <label class="label_nom">Adresse</label><br>
+              <input type="text" placeholder="Adresse">
+            </div>
+            <div class="label1">
+              <label class="label_nom">Code postale</label><br>
+              <input type="text" placeholder="Code postale">
+            </div>
+          </div>
+
+          <div class="telephone_email">
+            <div class="label1">
+              <label class="label_nom">Ville</label><br>
+              <input type="text" placeholder="Ville">
+            </div>
+            <div class="label1">
+              <label class="label_nom">Pays</label><br>
+              <input type="text" placeholder="Pays">
+            </div>
+          </div>
+        </div>
+        <div class="div_button"><button class="button" type="button">Envoyer</button></div>
+      </form>
+
+    </div>
+  </main>
+
+</body>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="../css/contact.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='#'><img src="../img/logo.png"alt="jsp"></a></li>
+                <div><input type='checkbox' id="check"></div>
+                <span class="menu">
+                  <li><a href="acceuil.html" class="nav-link">Home</a></li>
+                  <li><a href="#pizza" class="nav-link">Pizzas</a></li>
+                  <li><a href="#burger" class="nav-link">Burgers</a></li>
+                  <li><a href="#salades" class="nav-link">Salades</a></li>
+                  <li><a href="index3.html" class="nav-link">Contact</a></li>
+                  <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        <div class="food_app">
+            <div class="title_food_app">
+                <h3>Food app</h3>
+                <strong>Chez Bella <br>chaque désir s'additionne.</strong>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="infos" id="form-infos">
+            <form>
+              <h1>Nous Contacter</h1>
+      
+                <div class="grp_infos">
+                    <div class="nom_prenom">
+                        <div class="label1">
+                            <label class="label_nom">Nom</label><br>
+                            <input type="text" placeholder="Nom">
+                        </div>
+                        <div class="label1">
+                            <label class="label_nom">Prénom</label><br>
+                            <input type="text" placeholder="Prénom">
+                        </div>
+                    </div>    
+                </div>
+        
+                <div class="telephone_email">
+                  <div class="label1">
+                    <label class="label_nom">Téléphone</label><br>
+                    <input type="text" placeholder="Téléphone">
+                  </div>  
+                  <div class="label1">
+                    <label class="label_nom">Email</label><br>
+                    <input type="text" placeholder="Email">
+                  </div>
+                </div>
+
+                <div class="société_fonction">
+                    <div class="label1">
+                      <label class="label_nom">Société</label><br>
+                      <input type="text" placeholder="Société">
+                    </div>  
+                    <div class="label1">
+                      <label class="label_nom">Fonction</label><br>
+                      <input type="text" placeholder="Cuisiner">
+                    </div>
+                </div>
+                
+                
+                <div class="chose">
+                    <div class="div_button">
+                        <button class="button" type="button">UPLOAD</button>
+                        <p>Choose your file</p>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="g-recaptcha" data-sitekey="6Lc_nVgkAAAAANUqv4ltSxulUPFWVLdaBJeZfWuV"></div>
+                </div>
+
+                <div class="grp_choose">
+                    <div class="choose_message">
+                        <div class="label_choose">
+                            <label>Objet</label><br>
+                            <input type="text" placeholder="Objet">
+                        </div>
+                        <div class="label_message">
+                            <label>Message</label><br>
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                    </div>    
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6802.520331314847!2d2.4286389989125756!3d48.78576307783899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67344bd2d57f1%3A0x2a84a845271b523a!2sAFPA!5e0!3m2!1sfr!2sfr!4v1674599977215!5m2!1sfr!2sfr"
+                        width="800" height="400" style="border: 1px;;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="div_button2"><button class="button2" type="button">Envoyer</button></div>
+            </form>
+        </div>
+         
+    </main>
+</body>
+
+    
